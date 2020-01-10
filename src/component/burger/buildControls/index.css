@@ -1,0 +1,19 @@
+
+
+.BuildControls {
+    height: 400px;
+    width: 600px;
+    background-color: orange;
+    color: rebeccapurple;
+    margin: -10px auto;
+    border-radius: 20px;
+}
+.OrderButton{
+    height: 60px;
+    width: 200px;
+    margin: 10px 200px;
+    background-color: orangered;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}

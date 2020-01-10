@@ -1,26 +1,47 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+// import Person from './persons/person';
+// import Layout from './component/layout';
+import BurgerBuilder from './containers/burger_builder';
+import Aux from './hoc/Aux';
+import Toolbar from './component/navigation/toolbar';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component{
+
+  
+  render(){
+    return(
+      <Aux>
+        <Toolbar />
+        <BurgerBuilder />
+      </Aux>
+    )
+  }
+ 
+  // state = {
+  //     name: "jyoti",
+  //     flag : false,
+  // }
+  // onValueChange = e => {
+  //     const {name, value} = e.target;
+  //     this.setState({[name]: value})
+  //     if(name) this.setState({flag: false})
+  // }
+  // onUpdateName = () => {
+  //     this.setState({flag: !this.state.flag})
+  // }
+  // render() {
+  //   const {name, flag} = this.state;
+  //   return (
+  //     <div className="App">
+  //       <Person  name = {name} age  ='13' 
+  //         onUpdateName = {this.onUpdateName}
+  //         onValueChange  = {this.onValueChange}
+  //         flag = {flag}
+  //         />
+  //     </div>
+  //   );
+  // }
 }
 
 export default App;
